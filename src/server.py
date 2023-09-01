@@ -18,7 +18,10 @@ def process():
     checksum = request.json['checksum']
 
     # Decode the image
-    decoded_img = decode_image(image)
+    try:
+        decoded_img = decode_image(image)
+    except Exception as e:
+        return "Invalid image", 400
     decoded_img_checksum = get_hashlib_checksum(decoded_img)
 
     # Check if the image is valid
