@@ -31,7 +31,7 @@ class ImageProcessor():
         self._processed_image = self._process_image()
     
     
-    def _get_roi(self):
+    def _get_roi(self) -> ROICoords:
         """## Gets the roi (trapezoid) from the image.
 
         This can be converted into internal function that calls a model to extract the trapezoid roi

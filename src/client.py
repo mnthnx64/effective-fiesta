@@ -17,7 +17,7 @@ class Client():
     - `post_image()`: This method will post the image to the server and retrive the data sent by the server.
     """
 
-    def __init__(self,):
+    def __init__(self,) -> None:
         """## Constructor
         This is the constructor of the class.
         """

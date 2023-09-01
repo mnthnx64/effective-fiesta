@@ -10,6 +10,7 @@ import cv2
 from math import log10, sqrt
 import numpy as np
 
+# Read the images
 img1 = cv2.imread("images/test_img.png")
 img2 = cv2.GaussianBlur(img1, (5, 5), 0)
 
